@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <title>온라인 프로필</title>
+    <meta charset="utf-8">
+
+    <style>
+        body {
+            background: #f2f4f8;
+        }
+
+        /* 전체 */
+        #container {
+            width: 800px;
+            margin: 30px auto;
+            background: white;
+            box-shadow: 2px 2px 5px #746f6f;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* 사이드 */
+        #side {
+            width: 250px;
+            height: 800px;
+            background: blue;
+            float: left;
+            color: white;
+            text-align: center;
+            padding-top: 30px;
+            box-sizing: border-box;
+        }
+
+        /* 프로필 사진 */
+        #namecard img {
+            width: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-bottom: 10px;
+        }
+
+        #namecard h1 {
+            margin: 10px 0;
+        }
+
+        #namecard p {
+            font-size: 14px;
+        }
+
+        #detail {
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        #sns {
+            margin-top: 40px;
+        }
+
+        #sns a {
+            display: inline-block;
+            background: white;
+            color: blue;
+            padding: 8px 18px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        #sns a:hover {
+            background: #eee;
+        }
+
+        /* 내용 */
+        #contents {
+            width: 550px;
+            height: 800px;
+            background: white;
+            float: left;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        /* 제목 */
+        .subtitle {
+            border-left: 5px solid blue;
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* section 간격 */
+        section {
+            margin-bottom: 25px;
+        }
+
+        /* 리스트 */
+        ul {
+            line-height: 1.8;
+        }
+
+        /* 테이블 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, tr, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        thead {
+            background: blue;
+            color: white;
+        }
+        
+        .mark {
+            background: #ffe066;
+            padding: 2px 4px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <!-- 사이드바 -->
+        <div id="side">
+            <div id="namecard">
+                <img src="img1.png" alt="프로필 이미지">
+                <h1>Hong Gildong</h1>
+                <p>프로그래밍 재밌어요!</p>
+            </div>
+
+            <div id="detail">
+                <p>⛪ Incheon, Korea</p>
+                <p>📧 test@naver.com</p>
+            </div>
+
+            <div id="sns">
+                <h2>SNS</h2>
+                <h3><a href="#">클릭!</a></h3>
+            </div>
+
+        </div>
+
+
+        <!-- 내용 -->
+        <div id="contents">
+
+            <section>
+                <h2 class="subtitle">자기소개</h2>
+                <div> <span class="mark">프로그래밍</span>에 관심이 많습니다.</div>
+                <div>현재 열심히 공부하며 코딩 중!</div>
+            </section>
+
+
+            <section>
+                <h2 class="subtitle">Experience</h2>
+
+                <ul>
+                    <li> 아주좋은 대학교
+                        <ul>
+                            <li>응용프로그램 개발(C#)</li>
+                            <li>모바일 app 개발(안드로이드)</li>
+                            <li>반응형 웹</li>
+                        </ul>
+                    </li>
+
+                    <li>꽤 괜찮은 컴퓨터학원
+                        <ul>
+                            <li>Spring 기반 프로젝트 - 쇼핑몰</li>
+                            <li>Cloud 서비스를 이용한 배포</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+
+            <section>
+                <h2 class="subtitle">보유 기술</h2>
+                <ul>
+                    <li>Java</li>
+                    <li>Oracle</li>
+                    <li>HTML / CSS</li>
+                </ul>
+            </section>
+
+
+            <section>
+                <h2 class="subtitle">Education</h2>
+                <table>
+                    <caption>학력 사항</caption>
+                    <thead>
+                        <tr>
+                            <th>출신학교</th>
+                            <th>전공</th>
+                            <th>기간</th>
+                            <th>구분</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>아주좋은 대학교</td>
+                            <td>좋은학과</td>
+                            <td>2010.3 ~ 2013.2</td>
+                            <td>졸업</td>
+                        </tr>
+
+                        <tr>
+                            <td>꽤좋은고등학교</td>
+                            <td>-</td>
+                            <td>2007.3 ~ 2009.2</td>
+                            <td>졸업</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
