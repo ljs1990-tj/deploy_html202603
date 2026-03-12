@@ -239,8 +239,9 @@
         let datetime = new Date();
         let obj = document.querySelector("#time");
         let second = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
+        let minutes = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
         let time = datetime.getHours() + " : "
-                    + datetime.getMinutes() + " : "
+                    + minutes + " : "
                     + second;
 
         obj.innerHTML = time;
