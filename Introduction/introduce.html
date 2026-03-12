@@ -30,6 +30,12 @@
             text-align: center;
             padding-top: 30px;
             box-sizing: border-box;
+            position: relative;
+        }
+        #time{
+            bottom: 20px;
+            left : 90px;
+            position: absolute;
         }
 
         /* 프로필 사진 */
@@ -145,6 +151,7 @@
                 <h2>SNS</h2>
                 <h3><a href="#">클릭!</a></h3>
             </div>
+            <div id="time"></div>
 
         </div>
 
@@ -225,3 +232,15 @@
     </div>
 </body>
 </html>
+<script>
+    setInterval(()=>{
+        let datetime = new Date();
+        let obj = document.querySelector("#time");
+        let second = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
+        let time = datetime.getHours() + " : "
+                    + datetime.getMinutes() + " : "
+                    + second;
+
+        obj.innerHTML = time;
+    }, 1000);
+</script>
